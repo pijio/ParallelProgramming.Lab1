@@ -1,0 +1,11 @@
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\bin\Debug\net6.0\ParallelProgramming.Lab1.App.deps.json
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\bin\Debug\net6.0\ParallelProgramming.Lab1.App.dll
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\bin\Debug\net6.0\ParallelProgramming.Lab1.App.pdb
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\obj\Debug\net6.0\ParallelProgramming.Lab1.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\obj\Debug\net6.0\ParallelProgramming.Lab1.App.AssemblyInfoInputs.cache
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\obj\Debug\net6.0\ParallelProgramming.Lab1.App.AssemblyInfo.cs
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\obj\Debug\net6.0\ParallelProgramming.Lab1.App.csproj.CoreCompileInputs.cache
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\obj\Debug\net6.0\ParallelProgramming.Lab1.App.dll
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\obj\Debug\net6.0\refint\ParallelProgramming.Lab1.App.dll
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\obj\Debug\net6.0\ParallelProgramming.Lab1.App.pdb
+C:\Users\m2495\RiderProjects\ParallelProgramming.Lab1\ParallelProgramming.Lab1.App\obj\Debug\net6.0\ref\ParallelProgramming.Lab1.App.dll
