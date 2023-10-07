@@ -1,0 +1,45 @@
+﻿<Window x:Class="ParallelProgramming.Lab1.GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParallelProgramming.Lab1.GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"></RowDefinition>
+            <RowDefinition Height="0.25*"></RowDefinition>
+            <RowDefinition Height="0.25*"></RowDefinition>
+            <RowDefinition Height="0.25*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <!-- Поле для ввода текста в центре первой строки -->
+        <TextBox x:Name="InputBox" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="500" Height="70" Margin="10"/>
+
+        <!-- Блоки с текстом и скроллбары в остальных трех строках -->
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" Height="50" VerticalScrollBarVisibility="Disabled" Margin="10">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock x:Name="ConsumerBlock1" Text=""/>
+            </Border>
+        </ScrollViewer>
+
+        <ScrollViewer Grid.Row="2" HorizontalScrollBarVisibility="Auto" Height="50" VerticalScrollBarVisibility="Disabled" Margin="10">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock x:Name="ConsumerBlock2" Text=""/>
+            </Border>
+        </ScrollViewer>
+
+        <ScrollViewer  Grid.Row="3" HorizontalScrollBarVisibility="Auto" Height="50" VerticalScrollBarVisibility="Disabled" Margin="10">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <TextBlock x:Name="ConsumerBlock3" Text=""/>
+            </Border>
+        </ScrollViewer>
+
+        <!-- Текст-заголовок над каждым блоком -->        
+        <TextBlock Text="Input text" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Text="Consumer 1 (symbols)" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Text="Consumer 2 (digits)" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Text="Consumer 3 (letters)" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

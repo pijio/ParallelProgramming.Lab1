@@ -19,14 +19,18 @@ public class ProducerConsumerManager<T>
     /// Родить элемент по делегату
     /// </summary>
     /// <param name="produceFunc">Роженица</param>
-    public void Produce(Func<T> produceFunc)
+    public void Produce(Func<T> produceFunc) => Produce(produceFunc.Invoke());
+
+    /// <summary>
+    /// Передать новорожденного консьюмерам через буфер
+    /// </summary>
+    /// <param name="producedElement">Новорожденный</param>
+    public void Produce(T producedElement)
     {
-        var element = produceFunc.Invoke();
-        
         _empty.Wait();
         _binary.Wait();
 
-        _buffer.PutOverwriting(element);
+        _buffer.PutOverwriting(producedElement);
 
         _binary.Release();
         
