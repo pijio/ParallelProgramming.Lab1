@@ -50,9 +50,6 @@ public class RingBuffer<T>
     /// <returns>true если запись удалась, false если нет</returns>
     public bool PutOverwriting(T element)
     {
-        if (IsFull())
-            return false;
-        
         _data[++_writeSequence % _capacity] = element;
         return true;
     }
@@ -62,8 +59,7 @@ public class RingBuffer<T>
     /// </summary>
     public T? GetElement()
     {
-        var element = IsEmpty() ? default : _data[_readSequence % _capacity];
-        UpdateReadSequence();
+        var element = _data[_readSequence % _capacity];
         return element;
     }
 

@@ -48,16 +48,18 @@ public class ProducerConsumerManager<T>
         _binary.Wait();
 
         var getRes = _buffer.GetElement();
-        _binary.Release();
-        
+
         var checkPred = extractionPredicate.Invoke(getRes);
         if (checkPred)
+        {
             _empty.Release();
+            _buffer.UpdateReadSequence();
+        }
         else
         {
-            _buffer.RestoreReadSequence();
             _full.Release();
         }
+        _binary.Release();
         
         return (getRes, checkPred);
     }
